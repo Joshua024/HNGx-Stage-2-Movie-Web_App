@@ -1,6 +1,5 @@
 .splide__pagination {
     counter-reset: pagination-num;
-    /* background-color: red; */
   }
   
   .splide__pagination__page:before {

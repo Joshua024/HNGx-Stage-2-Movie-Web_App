@@ -1,12 +1,8 @@
 import React from "react";
 import TvLogo from "../../assets/tv.png";
-import Projector from "../../assets/Movie Projector.png";
-import TvShow from "../../assets/TV Show.png";
-import Calender from "../../assets/Calendar.png";
-import Logout from "../../assets/Logout.png";
 import { GoHome } from "react-icons/go";
 import { BiCameraMovie, BiLogIn } from "react-icons/bi";
-import { AiOutlineYoutube, AiOutlineUnorderedList } from "react-icons/ai";
+import { AiOutlineYoutube } from "react-icons/ai";
 import { VscCalendar } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
@@ -70,7 +66,6 @@ const Sidebar = () => {
           <p className="text-[20px] font-[600]">Log out</p>
         </Link>
       </div>
-      {/* <img src={Test} alt="" /> */}
     </>
   );
 };

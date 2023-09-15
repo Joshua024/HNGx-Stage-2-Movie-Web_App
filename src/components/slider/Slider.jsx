@@ -21,7 +21,7 @@ const Slider = () => {
         assassins' guild, and with a $14 million price tag on his head, he is
         the target of hit men and women everywhere.
       </p>
-      <button className="mt-[16px] h-[36px] w-[169px] rounded-[6px] border-[3px] border-[#BE123C] bg-[#BE123C] text-white duration-[0.5s] hover:bg-transparent">
+      <button className="mt-[16px] h-[36px] w-[169px] rounded-[6px] border-[3px] border-[#BE123C] bg-[#BE123C] duration-[0.5s] hover:bg-transparent">
         Watch trailer
       </button>
     </div>

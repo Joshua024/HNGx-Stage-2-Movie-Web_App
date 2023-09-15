@@ -1,21 +1,18 @@
-import React from 'react'
-import Nav from '../nav/Nav'
-import Slider from '../slider/Slider'
+import React from "react";
+import Nav from "../nav/Nav";
+import Slider from "../slider/Slider";
 
 const Hero = () => {
-  
- 
-
   return (
     <>
-    <div className="relative">
-      <div className="absolute w-screen z-50 top-0">
-      <Nav/>
+      <div className="relative">
+        <div className="absolute top-0 z-50 w-full">
+          <Nav />
+        </div>
+        <Slider />
       </div>
-    <Slider/>
-    </div>
 
- {/* <Splide
+      {/* <Splide
       options={ {
         rewind: true,
         gap   : '1rem',
@@ -37,8 +34,7 @@ const Hero = () => {
       </SplideSlide>
     </Splide> */}
     </>
-  )
-}
+  );
+};
 
-export default Hero
-
+export default Hero;

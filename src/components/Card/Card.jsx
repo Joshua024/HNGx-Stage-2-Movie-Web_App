@@ -49,6 +49,7 @@ const Card = (props) => {
           onClick={() => findSingleMovie(movie.id)}
           key={movie.id}
           className="relative mb-[20px] h-[513px] w-[250px] cursor-pointer text-left shadow-lg shadow-gray-200"
+          data-testid={`movie-card-${movie.id}`}
         >
           <img
             src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
@@ -59,10 +60,18 @@ const Card = (props) => {
           <button className="absolute right-[10px] top-[10px] h-[50px] w-[50px] rounded-full bg-[#F3F4F680] ps-[5px] text-center text-white hover:text-red-500">
             <AiFillHeart className="h-[40px] w-[40px] text-white duration-[0.5s]  hover:text-red-500" />
           </button>
-          <h4 className="pt-3 font-bold text-gray-400">
+          <h4
+            className="pt-3 font-bold text-gray-400"
+            data-testid={`movie-release-date-${movie.id}`}
+          >
             {movie.release_date} USA
           </h4>
-          <h2 className="pt-3 font-bold">{movie.title}</h2>
+          <h2
+            className="pt-3 font-bold"
+            data-testid={`movie-title-${movie.id}`}
+          >
+            {movie.title}
+          </h2>
           <div className="flex pt-3">
             <img src={Imdb} alt="" className="h-6 pe-3" />
             <span>{movie.vote_average}/10</span>

@@ -5,7 +5,7 @@ import Imdb from "../../assets/Imdb.png";
 import { useNavigate } from "react-router-dom"; // Use useNavigate instead of Navigate
 import { AiFillHeart } from "react-icons/ai";
 
-const Card = (props) => {
+const Card = () => {
   const navigate = useNavigate();
   const [movies, setMovies] = useState([]); // State to store movie data
 

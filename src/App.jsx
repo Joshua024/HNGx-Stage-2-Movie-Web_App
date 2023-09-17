@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         {/* Pass the movie data as a prop to the MoviePage component */}
-        <Route path='/movies/:movie_id' element={<MoviePage movie={movie} />} />
+        <Route path='/movies/:movie_id' element={<MoviePage />} />
       </Routes>
     </Router>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/hero/Hero';
-import Card from '../components/card/Card';
+import Card from '../components/block/Card';
 import Footer from "../components/footer/Footer"
 import Features from '../components/features/Features';
 

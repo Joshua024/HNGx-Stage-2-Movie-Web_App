@@ -31,8 +31,8 @@ const MoviePage = () => {
         <Sidebar />
 
         {/* Rest of your code */}
-        <div className="px-[51px] py-[38px]">
-          <div className="relative cursor-pointer" data-testid>
+        <div className="px-[51px] py-[38px]" data-testid={`movie-title-${movie.title}`}>
+          <div className="relative cursor-pointer" >
             <img
               src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
               className="w-[72vw] rounded-[10px]"
@@ -115,12 +115,13 @@ const MoviePage = () => {
             </h4>
           </div>
           <div className="mb-[25px] mt-[31px] flex w-[72vw] items-center">
-            <p className="text-[23px]" data-testid={`movie-title`}>{movie.title} • 2022 • PG-13 • 2h 10m</p>
-            <button className="px[3px] mx-[11px] rounded-[15px] border border-[#F8E7EB] px-[16px] duration-[0.5s] hover:bg-[#F8E7EB]" data-testid={`movie-genre-action`}
->
+            <p className="text-[23px]">{movie.title} • 2022 • PG-13 • <span 
+            data-testid={`movie-runtime-${movie.vote_count}`}
+            >2h 10m</span> </p>
+            <button className="px[3px] mx-[11px] rounded-[15px] border border-[#F8E7EB] px-[16px] duration-[0.5s] hover:bg-[#F8E7EB]" >
               Action
             </button>
-            <button className="px[3px] mx-[11px] rounded-[15px] border border-[#F8E7EB] px-[16px] duration-[0.5s] hover:bg-[#F8E7EB]" data-testid>
+            <button className="px[3px] mx-[11px] rounded-[15px] border border-[#F8E7EB] px-[16px] duration-[0.5s] hover:bg-[#F8E7EB]">
               Drama
             </button>
             <BsFillStarFill className="ms-auto h-[30px] w-[30px] p-[3px] text-yellow-300" />
@@ -132,18 +133,20 @@ const MoviePage = () => {
           </div>
           <div className="flex w-[72vw]">
             <div className="w-[58%]">
-              <p className="" data-testid={`movie-overview`}>{movie.overview}</p>
-              <p className="mt-[36px]" data-testid>
+              <p className=""
+              data-testid={`movie-overview-${movie.overview}`}
+              >{movie.overview}</p>
+              <p className="mt-[36px]">
                 Director :{" "}
                 <span className="text-[#BE123C]">Joseph Kosinski</span>
               </p>
-              <p className="mt-[36px]" data-testid>
+              <p className="mt-[36px]">
                 Writers :{" "}
                 <span className="text-[#BE123C]">
                   Jim Cash, Jack Epps Jr, Peter Craig
                 </span>
               </p>
-              <p className="mt-[36px]" data-testid>
+              <p className="mt-[36px]">
                 Stars :{" "}
                 <span className="text-[#BE123C]">
                   Tom Cruise, Jennifer Connelly, Miles Teller
@@ -168,7 +171,7 @@ const MoviePage = () => {
               </div>
             </div>
             <div className="m-auto w-[40%]">
-              <div className="flex h-[55px] w-[360px] cursor-pointer items-center justify-center gap-x-[10px] rounded-[10px] border-[2px] border-[#BE123C] bg-[#F8E7EB] text-[20px] font-[500] transition-all duration-[0.5s] hover:bg-[#BE123C] hover:text-white" data-testid>
+              <div className="flex h-[55px] w-[360px] cursor-pointer items-center justify-center gap-x-[10px] rounded-[10px] border-[2px] border-[#BE123C] bg-[#F8E7EB] text-[20px] font-[500] transition-all duration-[0.5s] hover:bg-[#BE123C] hover:text-white">
                 <TiTicket className="h-[23px] w-[23px]" />
                 <span>See Showtimes</span>
               </div>

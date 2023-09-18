@@ -49,7 +49,7 @@ const Card = () => {
           onClick={() => findSingleMovie(movie.id)}
           key={movie.id}
           className="relative mb-[20px] h-[513px] w-[250px] cursor-pointer text-left shadow-lg shadow-gray-200"
-          data-testid={`movie-card-${movie.id}`}
+          data-testid
         >
           <img
             src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
@@ -62,13 +62,13 @@ const Card = () => {
           </button>
           <h4
             className="pt-3 font-bold text-gray-400"
-            data-testid={`movie-release-date-${movie.id}`}
+            data-testid
           >
             {movie.release_date} USA
           </h4>
           <h2
             className="pt-3 font-bold"
-            data-testid={`movie-title-${movie.id}`}
+            data-testid
           >
             {movie.title}
           </h2>

@@ -32,7 +32,7 @@ const MoviePage = () => {
 
         {/* Rest of your code */}
         <div className="px-[51px] py-[38px]">
-          <div className="relative cursor-pointer" data-testid={`movie-backdrop`}>
+          <div className="relative cursor-pointer" data-testid>
             <img
               src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
               className="w-[72vw] rounded-[10px]"
@@ -120,7 +120,7 @@ const MoviePage = () => {
 >
               Action
             </button>
-            <button className="px[3px] mx-[11px] rounded-[15px] border border-[#F8E7EB] px-[16px] duration-[0.5s] hover:bg-[#F8E7EB]" data-testid={`movie-genre-drama`}>
+            <button className="px[3px] mx-[11px] rounded-[15px] border border-[#F8E7EB] px-[16px] duration-[0.5s] hover:bg-[#F8E7EB]" data-testid>
               Drama
             </button>
             <BsFillStarFill className="ms-auto h-[30px] w-[30px] p-[3px] text-yellow-300" />
@@ -133,17 +133,17 @@ const MoviePage = () => {
           <div className="flex w-[72vw]">
             <div className="w-[58%]">
               <p className="" data-testid={`movie-overview`}>{movie.overview}</p>
-              <p className="mt-[36px]" data-testid={`movie-director`}>
+              <p className="mt-[36px]" data-testid>
                 Director :{" "}
                 <span className="text-[#BE123C]">Joseph Kosinski</span>
               </p>
-              <p className="mt-[36px]" data-testid={`movie-writers`}>
+              <p className="mt-[36px]" data-testid>
                 Writers :{" "}
                 <span className="text-[#BE123C]">
                   Jim Cash, Jack Epps Jr, Peter Craig
                 </span>
               </p>
-              <p className="mt-[36px]" data-testid={`movie-stars`}>
+              <p className="mt-[36px]" data-testid>
                 Stars :{" "}
                 <span className="text-[#BE123C]">
                   Tom Cruise, Jennifer Connelly, Miles Teller
@@ -168,7 +168,7 @@ const MoviePage = () => {
               </div>
             </div>
             <div className="m-auto w-[40%]">
-              <div className="flex h-[55px] w-[360px] cursor-pointer items-center justify-center gap-x-[10px] rounded-[10px] border-[2px] border-[#BE123C] bg-[#F8E7EB] text-[20px] font-[500] transition-all duration-[0.5s] hover:bg-[#BE123C] hover:text-white" data-testid={`movie-see-showtimes-button`}>
+              <div className="flex h-[55px] w-[360px] cursor-pointer items-center justify-center gap-x-[10px] rounded-[10px] border-[2px] border-[#BE123C] bg-[#F8E7EB] text-[20px] font-[500] transition-all duration-[0.5s] hover:bg-[#BE123C] hover:text-white" data-testid>
                 <TiTicket className="h-[23px] w-[23px]" />
                 <span>See Showtimes</span>
               </div>
